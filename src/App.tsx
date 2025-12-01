@@ -77,7 +77,6 @@ function App() {
         )}
 
         <div className="hint">
-          El frontend espera un endpoint POST en <code>/api/check</code> que reciba JSON {`{ url: string }`} y responda {`{ malicious: boolean, reason?: string }`}. El campo `malicious` proviene del Bloom Filter: `true` significa "posiblemente en la blacklist" (falsos positivos posibles). Si quieres una comprobación definitiva, añade al backend una comprobación contra la base de datos real y expónla como `/api/verify`.
         </div>
       </div>
     </div>
